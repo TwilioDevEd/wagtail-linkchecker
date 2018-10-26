@@ -10,16 +10,16 @@ from setuptools import find_packages, setup
 
 setup(
     name='wagtail-linkchecker',
-    version='0.3.2',
+    version='0.3.3',
     description="A tool to assist with finding broken links on your wagtail site.",
     long_description=readme,
-    author='Liam Brenner',
-    author_email='liam@takeflight.com.au',
-    url='https://github.com/takeflight/wagtail-linkchecker',
+    author='Samuel Mendes',
+    author_email='smendes@twilio.com',
+    url='https://github.com/TwilioDevEd/wagtail-linkchecker',
 
     install_requires=[
-        'django-rq>=1.1.0',
-        'wagtail>=1.0',
+        'django-rq>=1.2.0',
+        'wagtail>=2.0',
         'requests>=2.9.1',
     ],
     zip_safe=False,

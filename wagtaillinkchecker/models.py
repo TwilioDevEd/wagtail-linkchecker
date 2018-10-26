@@ -141,7 +141,7 @@ class ScanLink(models.Model):
         from wagtaillinkchecker.tasks import check_link
         queue_name = getattr(settings, 'RQ_DEFAULT_QUEUE', 'default')
         queue = django_rq.get_queue(
-            queue_name, autocommit=True, async=True, default_timeout=360)
+            queue_name, autocommit=True, is_async=True, default_timeout=360)
         queue.enqueue(check_link, self.pk)
 
 @receiver(pre_delete, sender=Page)

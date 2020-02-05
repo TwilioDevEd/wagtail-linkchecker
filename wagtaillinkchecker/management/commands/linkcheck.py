@@ -3,6 +3,7 @@ from django.core import mail
 from django.core.mail import EmailMessage
 from django.core.management.base import BaseCommand
 from django.template.loader import render_to_string
+
 from wagtail import __version__ as WAGTAIL_VERSION
 
 from wagtaillinkchecker.scanner import broken_link_scan
